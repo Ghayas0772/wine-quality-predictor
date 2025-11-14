@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wine Quality Prediction</title>
+</head>
+<body>
+    <h2>Wine Quality Prediction</h2>
+    <form action="/predict" method="post">
+        Fixed Acidity: <input type="text" name="fixed_acidity"><br>
+        Volatile Acidity: <input type="text" name="volatile_acidity"><br>
+        Citric Acid: <input type="text" name="citric_acid"><br>
+        Residual Sugar: <input type="text" name="residual_sugar"><br>
+        Chlorides: <input type="text" name="chlorides"><br>
+        Free Sulfur Dioxide: <input type="text" name="free_sulfur_dioxide"><br>
+        Total Sulfur Dioxide: <input type="text" name="total_sulfur_dioxide"><br>
+        Density: <input type="text" name="density"><br>
+        pH: <input type="text" name="pH"><br>
+        Sulphates: <input type="text" name="sulphates"><br>
+        Alcohol: <input type="text" name="alcohol"><br>
+        <input type="submit" value="Predict">
+    </form>
+
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>
