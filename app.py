@@ -70,5 +70,5 @@ def api_predict():
 
 if __name__ == "__main__":
     # Listen on all interfaces so Docker can forward the port
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=false)
 
